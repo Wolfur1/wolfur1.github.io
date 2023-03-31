@@ -10,6 +10,7 @@ body{
 	background: #252526;
 	display: flex;
 	overflow-x: unset;
+	font-family: Monospace;
 }
 #left{
 
