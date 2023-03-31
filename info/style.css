@@ -1,0 +1,162 @@
+a{
+	color: #db8316;
+}
+a:hover{
+	color: #ab6611;
+}
+
+body{
+	margin: 0;
+	background: #252526;
+	display: flex;
+	overflow-x: unset;
+	font-family: Monospace;
+}
+#left{
+
+	margin: 0;
+	width: 12.5rem;
+	height:100vh;
+	overflow-y: scroll;
+	box-shadow: 5px 0px #2B2D31;
+
+}
+#middle{
+	width: 50rem;
+	height: 100vh;
+	align-content: center;
+	border-color: black;
+	overflow-y: scroll;
+}
+#right{
+
+	margin: 0;
+	width: 18.813rem;
+	height:100vh;
+	overflow-y: scroll;
+	box-shadow: -5px 0px #2B2D31;
+
+}
+
+.tpZone{
+
+	color: white;
+	text-align: center;
+
+}
+.tpB{
+
+	background: transparent;
+	border: unset;
+	color: white;
+	height: 50px;
+	box-shadow: 0px 2.5px #2B2D31;
+	cursor: pointer;
+
+}
+.tpB:hover{
+	color: #F9AE57;
+}
+
+.tpTitle{
+	color: white;
+	box-shadow: 0px 2.5px yellowgreen;
+	text-align: center;
+}
+
+.topic{
+	margin: 20px;
+	padding: 10px;
+	background: #2F2F37;
+	border-radius: 10px;
+}
+
+
+.title{
+	color: white;
+	box-shadow: 0px 2.5px #F9AE57;
+}
+.st{
+	color: white;
+	box-shadow: 0px 2.5px lightblue;
+}
+.topic h2{
+	color: #cecece;
+}
+
+.false{
+	color: #ff3a1d;
+}
+.true{
+	color: #46ff04;
+}
+
+
+.ad img{
+
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+
+}
+.discord:hover{
+	content: url('discordPushed.png');
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+
+}
+.twitch:hover{
+	content: url('twitchPushed.png');
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+
+}
+.ad{
+
+	background: #2F2F37;
+	padding: 5px;
+	margin: 5px;
+
+}
+.adTitle{
+	color: white;
+	box-shadow: 0px 2.5px yellow;
+}
+.adDesc{
+	color: #F9AE57;
+}
+
+.header{
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 10px;
+	right:-100px;
+}
+
+
+::-webkit-scrollbar-track {
+	background: transparent; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+	background: #F9AE57; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+	background: #d07f22; 
+}
