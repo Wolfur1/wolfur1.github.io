@@ -1,2 +1,2 @@
 # wolfur1.github.io
-A site about in my informations
+A site about in my information
