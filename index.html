@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Wolfur1</title>
+    <style type="text/css">
+        body {
+            background-color: #202020;
+            font-family: monospace;
+            color: #dcdcdc;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: slide-in 1s ease-out;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            }
+            to {
+                text-shadow: 0 0 20px #ffffff, 0 0 30px #b5ff00, 0 0 40px #b5ff00;
+            }
+        }
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #b5ff00;
+            border-radius: 5px;
+            color: #202020;
+            font-size: 1.2em;
+            text-decoration: none;
+            animation: pulse 2s ease-in-out infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to Wolfur1</h1>
+        <p>A place to learn, grow, and connect with like-minded individuals.</p>
+        <a href="https://wolfur1.github.io/info" class="button">Visit our site</a>
+    </div>
+</body>
+</html>
