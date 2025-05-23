@@ -1,75 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Wolfur1</title>
-    <style type="text/css">
-        body {
-            background-color: #202020;
-            font-family: monospace;
-            color: #dcdcdc;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        #container {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        p {
-            font-size: 1.5em;
-            margin: 20px 0;
-            animation: slide-in 1s ease-out;
-        }
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
-            }
-            to {
-                text-shadow: 0 0 20px #ffffff, 0 0 30px #b5ff00, 0 0 40px #b5ff00;
-            }
-        }
-        @keyframes slide-in {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #b5ff00;
-            border-radius: 5px;
-            color: #202020;
-            font-size: 1.2em;
-            text-decoration: none;
-            animation: pulse 2s ease-in-out infinite alternate;
-        }
-        @keyframes pulse {
-            from {
-                transform: scale(1);
-            }
-            to {
-                transform: scale(1.2);
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuture 12 - Home page</title>
 </head>
 <body>
-    <div id="container">
-        <h1>Welcome to Wolfuri's Website</h1>
-        <p>A place to learn information about my projects and to join my comunity</p>
-        <a href="https://wolfur1.github.io/info" class="button">Visit my site</a>
+    
+    <div id="content">
+        <div id="guard">
+            <h1 class="bigTitle">La Tuture 12</h1>
+            <div id="intro">
+                <img src="tutureicon.png">
+                <h2 style="text-align: left;">Ici vous trouverez:<br>
+                    -   Les règles du jeu<br>
+                    -   Une explication détaillé de chaque grande partie<br>
+                    -   Les composants de la voiture<br>
+                    -   Les schémas de tout les cablages<br>
+                </h2>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="card">
+                <h2 class="title">Afin de mieux comprendre le projet, nous vous conseillons de consulter les règles ci-dessous</h2>
+                <button onclick="window.location = './rules.html'">
+                    <h2>Règles</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Une explication détaillé de chaque grande partie</h2>
+                <button onclick="window.location = './sep.html'">
+                    <h2>Grandes parties</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Ci-dessous ce trouve les composants de la Tuture 12</h2>
+                <button onclick="window.location = './parts.html'">
+                    <h2>Composants</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Voici Les schémas des cablages</h2>
+                <button onclick="window.location = './cable.html'">
+                    <h2>Cablage</h2>
+                </button>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
+
+<style>
+
+    @keyframes rainbow {
+        0% {
+            border-color: #ff5733;
+        }
+        20% {
+            border-color: #f5d142;
+        }
+        40% {
+            border-color: #66ff66;
+        }
+        60% {
+            border-color: #33ccff;
+        }
+        80% {
+            border-color: #cc33ff;
+        }
+        100% {
+            border-color: #ff5733;
+        }
+    }
+    body{
+        background-color: rgb(192, 192, 192);
+    }
+    #content{
+        width: 75%;
+        height: 100%;
+        margin: auto;
+        background-color: white;
+        border-radius: 5px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 5px 2px rgb(182, 182, 182);
+    }
+
+    .card{
+        border-radius: 8px;
+        background-color: rgb(226, 226, 226);
+        border: 2px solid rgba(0, 119, 182, 0.6);
+        width: 50%;
+        margin: 2rem auto 0 auto;
+        padding: 1rem;
+        box-shadow: 2px 2px rgb(182, 182, 182);
+        /*animation: rainbow 15s infinite linear;*/
+    }
+
+    #menu button{
+        background-color: rgb(50, 161, 201);
+        border-radius: 7px;
+        border: unset;
+        
+        color:rgb(208, 208, 208);
+        cursor: pointer;
+        width: 35%;
+        transition: background-color 0.3s ease, width 0.3s ease;
+    }
+    #menu button:hover{
+        background-color: rgb(42, 133, 167);
+        width: 45%;
+    }
+
+    #guard{
+        text-align: center;
+        align-content: center;
+        margin: 0 auto;
+        width:80%;
+        box-shadow: 0px 3px rgba(0, 119, 182, 0.6);
+    }
+    #guard img{
+        margin: 0;
+        height: 17rem;
+        width: 17rem;
+    }
+    #intro{
+        display: flex;
+        margin: 2rem auto
+    }
+    .bigTitle{
+        text-decoration: underline;
+        font-size: 3rem;
+    }
+</style>
