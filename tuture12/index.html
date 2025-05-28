@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuture 12 - Home page</title>
+</head>
+<body>
+    
+    <div id="content">
+        <div id="band">
+            <div style="display: flex;">
+                <img src="tutureicon.png">
+                <div>
+                    <h1 class="bigTitle">La Tuture 12</h1>
+                </div>
+            </div>
+        </div>
+        <div id="guard">
+            <div id="intro">
+                
+                <h2 style="text-align: left;">Ici vous trouverez:<br>
+                    -   Les règles du jeu<br>
+                    -   Une explication détaillé de chaque grande partie<br>
+                    -   Les composants de la voiture<br>
+                    -   Les schémas de tout les cablages<br>
+                </h2>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="card">
+                <h2 class="title">Afin de mieux comprendre le projet, nous vous conseillons de consulter les règles ci-dessous</h2>
+                <button onclick="window.location = './rules.html'">
+                    <h2>Règles</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Une explication détaillé de chaque grande partie</h2>
+                <button onclick="window.location = './sep.html'">
+                    <h2>Grandes parties</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Ci-dessous ce trouve les composants de la Tuture 12</h2>
+                <button onclick="window.location = './parts.html'">
+                    <h2>Composants</h2>
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="title">Voici Les schémas des cablages</h2>
+                <button onclick="window.location = './cable.html'">
+                    <h2>Cablage</h2>
+                </button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+
+    @keyframes rainbow {
+        0% {
+            border-color: #ff5733;
+        }
+        20% {
+            border-color: #f5d142;
+        }
+        40% {
+            border-color: #66ff66;
+        }
+        60% {
+            border-color: #33ccff;
+        }
+        80% {
+            border-color: #cc33ff;
+        }
+        100% {
+            border-color: #ff5733;
+        }
+    }
+    body{
+        background-color: rgb(192, 192, 192);
+        margin: 0;
+        padding: 0;
+    }
+    #content{
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: white;
+        border-radius: 10px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 5px 2px rgb(182, 182, 182);
+    }
+
+    #band{
+        background-color: rgba(0, 119, 182, 0.9);
+        margin: 0rem 0;
+        height: 3rem;
+        padding: 2rem;
+        border-radius: 10px 10px 0 0;
+    }
+    .bigTitle{
+        font-size: 200%;
+        color: white;
+        margin: .5rem auto;
+        width: 675%;
+    }
+    #band img{
+        margin: 0;
+        width: 5%;
+    }
+
+    .card{
+        border-radius: 8px;
+        background-color: rgb(226, 226, 226);
+        border: 2px solid rgba(0, 119, 182, 0.6);
+        width: 50%;
+        margin: 2rem auto 0 auto;
+        padding: 1rem;
+        box-shadow: 2px 2px rgb(182, 182, 182);
+        /*animation: rainbow 15s infinite linear;*/
+    }
+
+    #menu button{
+        background-color: rgb(50, 161, 201);
+        border-radius: 7px;
+        border: unset;
+        
+        color:rgb(208, 208, 208);
+        cursor: pointer;
+        width: 35%;
+        transition: background-color 0.3s ease, width 0.3s ease;
+    }
+    #menu button:hover{
+        background-color: rgb(42, 133, 167);
+        width: 45%;
+    }
+
+    #guard{
+        text-align: center;
+        align-content: center;
+        margin: 0 auto;
+        width:80%;
+        box-shadow: 0px 3px rgba(0, 119, 182, 0.6);
+    }
+    #intro{
+        display: flex;
+        margin: 2rem auto
+    }
+</style>
