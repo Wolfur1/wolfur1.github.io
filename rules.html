@@ -9,8 +9,15 @@
 <body>
     
     <div id="content">
+        <div id="band">
+            <div style="display: flex;">
+                <img src="tutureicon.png">
+                <div>
+                    <h1 class="bigTitle">La Tuture 12</h1>
+                </div>
+            </div>
+        </div>
         <div id="guard">
-            <h1 class="bigTitle">La Tuture 12 - Les règles</h1>
             <div class="part">
                 <h1 class="title">Règles du jeu</h1>
                 <p>Les règles du jeu son simples: 2 équipes de 2 voitures s'affrontre en 2 contre 2 sur un match de foot type Rocket League</p>
@@ -28,22 +35,42 @@
 <style>
     body{
         background-color: rgb(192, 192, 192);
+        margin: 0;
+        padding: 0;
     }
     #content{
         width: 75%;
         height: 100%;
-        margin: auto;
+        margin: 0 auto;
+        padding: 0;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 10px;
         align-content: center;
         align-items: center;
         text-align: center;
         box-shadow: 5px 2px rgb(182, 182, 182);
     }
-
     .title{
         margin: 2rem auto;
-        width:75%;
+        width: 75%;
+    }
+
+    #band{
+        background-color: rgba(0, 119, 182, 0.9);
+        margin: 0rem 0;
+        height: 3rem;
+        padding: 2rem;
+        border-radius: 10px 10px 0 0;
+    }
+    .bigTitle{
+        font-size: 200%;
+        color: white;
+        margin: .5rem auto;
+        width: 675%;
+    }
+    #band img{
+        margin: 0;
+        width: 5%;
     }
 
     #guard{
@@ -63,9 +90,5 @@
         background-color: rgb(226, 226, 226);
         box-shadow: 2px 2px rgb(182, 182, 182);
         border: 2px solid rgba(0, 119, 182, 0.6);
-    }
-    .bigTitle{
-        text-decoration: underline;
-        font-size:3rem;
     }
 </style>
